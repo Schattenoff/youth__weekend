@@ -6,7 +6,7 @@ import { emailjsKeys } from './feedback.constants';
 import { useForm } from 'react-hook-form';
 
 const Feedback = () => {
-  const { register, handleSubmit, formState: { errors, isValid } } = useForm({ mode: 'all' });
+  const { register, handleSubmit, reset, formState: { errors, isValid } } = useForm({ mode: 'all' });
   const form = useRef();
 
   const sendEmail = () => {
@@ -16,6 +16,7 @@ const Feedback = () => {
       }, (error) => {
         console.log(error.text);
       });
+    reset({ user_name: '', message: '' })
   };
 
   return (
@@ -25,7 +26,6 @@ const Feedback = () => {
         <form className={classes.feedback__form} ref={form} onSubmit={handleSubmit(sendEmail)}>
           <label className={classes.form__label}>Имя</label>
           <input className={classes.form__input} type="text"{...register("user_name", { required: true })} />
-          { }
           <label className={classes.form__label}>Комментарий</label>
           <textarea className={classes.form__textarea} {...register("message", { required: true })} />
           <button className={!isValid ? classes.button__disabled : classes.form__button} type="submit" disabled={!isValid}>Отправить</button>
