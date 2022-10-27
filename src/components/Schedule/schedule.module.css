@@ -1,0 +1,25 @@
+.schedule {
+  min-height: 100vh;
+}
+
+.schedule__title {
+  padding: 50px 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 60, 131, 1) 0%,
+    rgba(216, 58, 46, 1) 56%,
+    rgba(135, 45, 143, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+  color: black;
+  margin: 0px auto;
+  font-size: 30px;
+}
+
+.schedule__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
