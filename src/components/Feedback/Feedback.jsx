@@ -4,17 +4,18 @@ import emailjs from '@emailjs/browser';
 import classes from './feedback.module.css';
 import { emailjsKeys } from './feedback.constants';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toast';
 
 const Feedback = () => {
-  const { register, handleSubmit, reset, formState: { errors, isValid } } = useForm({ mode: 'all' });
+  const { register, handleSubmit, reset, formState: { isValid } } = useForm({ mode: 'all' });
   const form = useRef();
 
   const sendEmail = () => {
     emailjs.sendForm(emailjsKeys.serviceID, emailjsKeys.templateID, form.current, emailjsKeys.publicKey)
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
+      .then(() => {
+        toast.success("Вы успешно отправили отзыв! Спасибо большое :)")
+      }, (err) => {
+        toast.err(err.text)
       });
     reset({ user_name: '', message: '' })
   };

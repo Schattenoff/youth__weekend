@@ -3,7 +3,7 @@ import React from 'react';
 const Logo = () => {
   return (
     <>
-      <h1>Youth weekend</h1>
+      <h1>{window.innerWidth < 993 ? 'YW' : 'Youth weekend'}</h1>
     </>
   );
 }
