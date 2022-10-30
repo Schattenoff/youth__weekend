@@ -35,6 +35,7 @@ const MenuBurger = () => {
                   spy={true}
                   smooth={true}
                   duration={1000}
+                  offset={-80}
                 >{item.title}
                 </Link>
               </li>))
