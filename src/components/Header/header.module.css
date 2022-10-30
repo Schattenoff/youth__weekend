@@ -9,6 +9,7 @@
     rgba(216, 58, 46, 1) 56%,
     rgba(135, 45, 143, 1) 100%
   );
+  z-index: 80;
 }
 
 .header__content {
@@ -17,5 +18,10 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0;
+    background-position: 0px 1px, 100% 0px;
+  }
 }

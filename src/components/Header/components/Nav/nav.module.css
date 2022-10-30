@@ -1,5 +1,18 @@
+.nav {
+  position: fixed;
+  background: #2c303b;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .nav_ul {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .nav_ul li {
@@ -14,4 +27,15 @@
 
 .nav_ul li a:hover {
   color: #2c303b;
+}
+
+.menu__close {
+  position: absolute;
+  font-size: 50px;
+  transform: rotate(-45deg);
+  background: none;
+  border: none;
+  right: 25px;
+  cursor: pointer;
+  color: #fff;
 }

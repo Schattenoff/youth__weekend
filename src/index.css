@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -34,4 +30,5 @@ body {
   font-size: 15px;
   background: #fff;
   color: #fff;
+  overflow-x: hidden;
 }

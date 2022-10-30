@@ -20,6 +20,7 @@
   height: 200px;
   border-radius: 50%;
   background: #fff;
+  object-fit: cover;
 }
 
 .contact__profile {
@@ -38,7 +39,6 @@
   font-size: 18px;
 }
 
-.contact__email,
 .contact__instagram {
   font-size: 22px;
   font-weight: 500;
@@ -46,8 +46,19 @@
   margin-top: 20px;
 }
 
-.contact__instagram {
+.contact__social {
   margin-bottom: 50px;
+}
+
+.instagram__link {
+  display: flex;
+  align-items: center;
+}
+
+.instagram__icon {
+  height: 40px;
+  filter: invert(100%);
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {

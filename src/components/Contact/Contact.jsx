@@ -11,7 +11,7 @@ const Contact = () => {
         <div className={classes.contact__content}>
 
           <div className={classes.contact__profile}>
-            <div className={classes.contact__circle}></div>
+            <img className={classes.contact__circle} src="img/Sivolobov.JPG" alt="Sivolobov"></img>
             <div className={classes.profile__info}>
               <h2>Сиволобов Алексей Станиславович</h2>
               <p>Региональный пастор</p>
@@ -28,9 +28,12 @@ const Contact = () => {
             </div>
           </div>
 
-          <div>
-            <p className={classes.contact__email}>Email: <a href="mail:viezd.v.rubu@gmail.com">viezd.v.rubu@gmail.com</a></p>
-            <p className={classes.contact__instagram}>Instagram: <a href='https://www.instagram.com/youth_weekend_vtb/' target="_target">@youth__weekend_vtb</a></p>
+          <div className={classes.contact__social}>
+            <p className={classes.contact__instagram}>
+              <a className={classes.instagram__link} href='https://www.instagram.com/youth_weekend_vtb/' target="_target">
+                <img className={classes.instagram__icon} src="img/instagram__icon.svg" alt="Instagram" /> @youth__weekend_vtb
+              </a>
+            </p>
           </div>
 
 

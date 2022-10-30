@@ -1,9 +1,11 @@
 import React from 'react';
+import { useResize } from '../../../../hooks/useResize';
 
 const Logo = () => {
+  const { innerWidth: width } = useResize();
   return (
     <>
-      <h1>{window.innerWidth < 993 ? 'YW' : 'Youth weekend'}</h1>
+      <h1>{width < 993 ? 'YW' : 'Youth weekend'}</h1>
     </>
   );
 }
