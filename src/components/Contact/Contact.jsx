@@ -20,7 +20,7 @@ const Contact = () => {
           </div>
 
           <div className={classes.contact__profile}>
-            <div className={classes.contact__circle}></div>
+            <img className={classes.contact__circle} src="img/Xandriko.JPG" alt="Xandriko" ></img>
             <div className={classes.profile__info}>
               <h2>Хандрико Иван Анатольевич</h2>
               <p>Ответственный за молодежь Витебской области</p>
