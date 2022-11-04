@@ -1,6 +1,7 @@
 .feedback {
   padding-bottom: 50px;
   background: #d8392ec2;
+  position: relative;
 }
 
 .feedback__title {

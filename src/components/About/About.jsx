@@ -15,12 +15,9 @@ const About = () => {
             <article className={classes.about__article}>
               <h2 className={classes.about__title}>Youth weekend - это место силы</h2>
               <p className={classes.about__text}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Это христианские молодёжные выезды, конференции, лагеря, где можно вместе  отдыхать, общаться, назидаться и быть в присутствии Божьем.
+                Тема нынешнего уик-энда - заповедь Иисуса, которая говорит о любви к ближнему. Кто мой ближний? Что значит любить его, как себя? Как это практически сделать?
+                На эти вопросы мы будем искать ответы вместе!
               </p>
             </article>
           </div>
